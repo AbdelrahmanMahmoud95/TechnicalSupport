@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agenda.smart.technicalsupport.views.ChooseActivity">
+
+    <RelativeLayout
+        android:id="@+id/home_linear"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/home_group1">
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp"
+            android:src="@drawable/exit" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="65dp"
+            android:gravity="center"
+            android:text="USERNAME"
+            android:textColor="@color/applicationColor"
+            android:textSize="19sp" />
+
+
+        <TextView
+            android:id="@+id/edit_data"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/round_corner_text_view"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="تعديل البيانات"
+            android:textColor="@color/applicationColor"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/home_linear"
+        android:background="@drawable/balls">
+
+        <TextView
+            android:id="@+id/product_layout"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_corner_text_view"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="منتجاتنا"
+            android:textColor="@color/applicationColor"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/our_customer"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_corner_text_view"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="عملائنا"
+            android:textColor="@color/applicationColor"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/user_problem"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/our_customer"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_corner_text_view"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="الدعم الفني"
+            android:textColor="@color/applicationColor"
+            android:textSize="19sp" />
+
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_problem"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_corner_text_view"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="اتصل بنا"
+            android:textColor="@color/applicationColor"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigation"
+        android:layout_below="@+id/container">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/website" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/website"
+            android:scaleType="fitXY"
+            android:src="@drawable/round_shap2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="33dp"
+            android:layout_marginEnd="7dp"
+            android:text="اضغط هنا لزيارة موقعنا"
+            android:textColor="@color/applicationColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/navigation"
+        layout="@layout/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

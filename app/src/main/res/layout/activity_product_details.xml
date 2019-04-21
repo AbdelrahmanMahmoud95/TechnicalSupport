@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agenda.smart.technicalsupport.views.ProductDetailsActivity">
+    <RelativeLayout
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/products"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="طلباتي"
+            android:textColor="@color/applicationColor"
+            android:textSize="22dp" />
+
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/textView3"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="معرض المنتجات"
+            android:textColor="@color/applicationColor"
+            android:textSize="21dp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_above="@+id/navigation"
+        android:layout_below="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp" />
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/shap"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/item_image"
+                android:layout_alignEnd="@+id/item_image"
+                android:gravity="center"
+                android:minHeight="45dp"
+                android:padding="4dp"
+                android:text="name"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/item_image"
+                android:layout_alignStart="@+id/item_image"
+                android:gravity="center"
+                android:minHeight="45dp"
+                android:padding="4dp"
+                android:text="price"
+                android:textColor="#fff"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_price"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:text="تفاصيل المنتج:"
+                android:padding="4dp"
+                android:textColor="@color/applicationColor"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:text="العلامة التجارية: كاسيو"
+                android:padding="4dp"
+                android:textColor="@color/applicationColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/item_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mark"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:minHeight="90dp"
+                android:padding="4dp"
+                android:textColor="@color/applicationColor"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_marginBottom="6dp"
+                android:id="@+id/order"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/item_details"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/round_application_color"
+                android:text="أطلب الأن"
+                android:textColor="#fff"
+                android:textSize="21sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/navigation"
+        layout="@layout/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:visibility="visible" />
+</RelativeLayout>

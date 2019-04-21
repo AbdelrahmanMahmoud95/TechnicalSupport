@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/applicationColor"
+    tools:context="com.agenda.smart.technicalsupport.views.RegistrationActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/smart_agenda" />
+
+            <TextView
+                android:id="@+id/make_account"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/round_corner_button"
+                android:gravity="center"
+                android:text="انشاء حساب"
+                android:textColor="@color/applicationColor"
+                android:textSize="20sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/register_user_photo"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:text="اسم العميل:"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corner_button"
+                android:hint="ادخل اسم العميل"
+                android:padding="8dp"
+                android:textColor="@color/applicationColor"
+                android:textColorHint="@color/applicationColor"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:text="اسم المستخدم:"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corner_button"
+                android:hint="ادخل اسم المستخدم"
+                android:padding="8dp"
+                android:textColor="@color/applicationColor"
+                android:textColorHint="@color/applicationColor"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:text="رقم الجوال:"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corner_button"
+                android:hint="ادخل رقم الجوال"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textColor="@color/applicationColor"
+                android:textColorHint="@color/applicationColor"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:text="اسم النشاط التجاري:"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/commerce_name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corner_button"
+                android:hint="ادخل اسم النشاط التجاري"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/applicationColor"
+                android:textColorHint="@color/applicationColor"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:text="نوع النشاط التجاري:"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+            <LinearLayout
+                android:id="@+id/commerce_type_linear"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="8dp"
+
+                android:background="@drawable/round_corner_button">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/arrow_down" />
+
+                <TextView
+                    android:id="@+id/commerce_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="اختر نوع النشاط التجاري"
+                    android:padding="8dp"
+                    android:textColor="@color/applicationColor"
+                    android:textColorHint="@color/applicationColor"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:text="المدينة:"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+            <LinearLayout
+                android:id="@+id/city_linear"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="8dp"
+
+                android:background="@drawable/round_corner_button">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/arrow_down" />
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center|right"
+                    android:hint="اختر المدينة"
+                    android:padding="8dp"
+                    android:textColor="@color/applicationColor"
+                    android:textColorHint="@color/applicationColor"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:text="البريد الالكتروني:"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corner_button"
+                android:hint="البريد الالكتروني"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/applicationColor"
+                android:textColorHint="@color/applicationColor"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:text="كلمة المرور:"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corner_button"
+                android:gravity="right|center"
+                android:hint="ادخل كلمة المرور"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/applicationColor"
+                android:textColorHint="@color/applicationColor"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:text="العنوان:"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_corner_button"
+                android:gravity="right|center"
+                android:hint="ادخل العنوان"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/applicationColor"
+                android:textColorHint="@color/applicationColor"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/commerce_logo_linear"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/round_corner_button">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/image" />
+
+                <TextView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:paddingRight="4dp"
+                    android:text="اضف صورة"
+                    android:textColor="@color/applicationColor"
+                    android:textColorHint="@color/applicationColor"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/new_user"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_corner_button"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:src="@drawable/go_arrow" />
+
+                <TextView
+                    android:id="@+id/new_user_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="مستخدم جديد"
+                    android:textColor="@color/applicationColor"
+                    android:textSize="19sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="الرئيسية" />
+
+    <item
+        android:id="@+id/navigation_products"
+        android:icon="@drawable/shopping"
+        android:title="طلباتي" />
+    <item
+        android:id="@+id/navigation_chatting"
+        android:icon="@drawable/chatting"
+        android:title="الدعم الفني" />
+
+    <item
+        android:id="@+id/navigation_help"
+        android:icon="@drawable/help1"
+        android:title="مساعدة" />
+
+    <item
+        android:id="@+id/navigation_contact_us"
+        android:icon="@drawable/phone_contact"
+        android:title="اتصل بنا" />
+
+
+</menu>

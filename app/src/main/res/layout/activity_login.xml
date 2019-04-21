@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/applicationColor"
+    android:orientation="vertical"
+    tools:context="com.agenda.smart.technicalsupport.views.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/smart_logo"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/smart_agenda" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/round_corner_button"
+                android:gravity="center"
+                android:text="تسجيل الدخول"
+                android:textColor="@color/applicationColor"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="60dp"
+                android:text="اسم المستخدم:"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/round_corner_button"
+                android:gravity="center|right"
+                android:hint="ادخل اسم المستخدم"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/applicationColor"
+                android:textColorHint="@color/applicationColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:text="كلمة المرور:"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/round_corner_button"
+                android:gravity="center|right"
+                android:hint="ادخل كلمة المرور"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/applicationColor"
+                android:textColorHint="@color/applicationColor"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/round_corner_button"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:text="دخول"
+                android:textColor="@color/applicationColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/forget_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/forget_password"
+
+                android:textColor="#b1ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="  ليس لديك حساب بعد ؟انشئ حساب جديد"
+                android:textColor="#b1ffffff"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/new_user"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+
+                android:background="@drawable/round_corner_button"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:src="@drawable/go_arrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="مستخدم جديد"
+                    android:textColor="@color/applicationColor"
+                    android:textSize="19sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
